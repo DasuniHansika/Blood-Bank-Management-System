@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(29, 1, 1, 0.5),rgba(221, 125, 118, 0.7)), url(1.jpg);   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #750303;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(22, 2, 2);
+    text-decoration: none;
+    font: size 13px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #750303;
+    display: block;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+     
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 500px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 70px;
+    padding-left: 500px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #770707;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #770707;
+    font-size: 65px
+}
+nav.fa{
+    display: none;
+}
+@media(max-width:700px){
+
+    .header{
+        background-position: left; 
+        background-size: auto;
+        position: relative;
+        
+    
+    }
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 30px;
+        padding-left: 30px;
+        margin-top: 9%;
+        letter-spacing: 1px;
+    }
+    .content .par{
+        padding-left: 30px;
+        
+    }
+    .content .cn{
+        margin-left: 30px;
+        font-size: 12px;
+                
+    }
+    .content span{
+        font-size: 35px
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #860c31;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----------class-------*/
+
+p{
+    color: #190441;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.vision{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #db949e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2); 
+}
+
+@media(max-width:700px){
+    .vision{
+        flex-direction: column;
+    }
+}
+
+/*------CALL TO ACTION---*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(12, 14, 14, 0.7),rgba(69, 71, 71, 0.7)),url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: rgb(21, 2, 75);
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 45px;
+}
+/*-----footer---*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px,;
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+
+.icons.fa{
+    color: #770707;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
